@@ -12,6 +12,17 @@ namespace PraktikumADO
         SqlConnection conn;
         SqlCommand cmd;
 
-        
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=SHIROKO\\FADILSYY;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+
+
     }
 }
